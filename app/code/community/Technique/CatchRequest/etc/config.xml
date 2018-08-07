@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Technique_CatchRequest>
+            <version>0.1.2</version>
+        </Technique_CatchRequest>
+    </modules>
+    <global>
+        <models>
+            <technique_catchrequest>
+                <class>Technique_CatchRequest_Model</class>
+            </technique_catchrequest>
+        </models>
+        <events>
+            <http_response_send_before>
+                <observers>
+                    <technique_catchrequest>
+                        <class>technique_catchrequest/observer</class>
+                        <method>catchRequest</method>
+                        <type>singleton</type>
+                    </technique_catchrequest>
+                </observers>
+            </http_response_send_before>
+        </events>
+    </global>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Technique_CatchRequest>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Technique_CatchRequest>
+    </modules>
+</config>
